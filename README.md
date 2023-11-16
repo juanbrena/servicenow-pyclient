@@ -1,2 +1,2 @@
 # servicenow-pyclient
-A ServiceNow API Client in python
+A ServiceNow REST API python client
