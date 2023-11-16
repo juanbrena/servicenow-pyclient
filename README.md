@@ -16,7 +16,8 @@ from servicenow_pyclient import SNClient
 sn_client = SNClient(url='<YOUR SN INSTANCE URL>', username='<YOUR USERNAME>', password='<YOUR PASSWORD>')
 ```
 
-### Get a record from a table with the sys_id
+### Get a record from a table by the sys_id
 ```python
 record = sn_client.get_table_record(table_name='TABLE_NAME', sys_id='1234567890')
+print(record)
 ```
