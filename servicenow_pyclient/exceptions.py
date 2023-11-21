@@ -4,7 +4,7 @@ class SNException(Exception):
     error_detail = '<empty>'
 
     def __init__(self, req_error, sn_error):
-        error = sn_error.get('error', None)
+        error = sn_error.get('error', {})
 
         if 'message' in error:
             self.error_msg = error['message'] or self.error_msg
