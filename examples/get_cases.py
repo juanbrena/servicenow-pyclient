@@ -6,8 +6,7 @@ def main():
     # Create ServiceNow Client
     sn_client = SNClient(url='<YOUR SN INSTANCE URL>',
                          username='<YOUR USERNAME>',
-                         password='<YOUR PASSWORD>',
-                         enable_push_changes=False)
+                         password='<YOUR PASSWORD>')
 
     # Let's get 10 cases that are active
     query = 'active=true'
